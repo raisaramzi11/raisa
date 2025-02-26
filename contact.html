@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perpustakaan Raisa Muriza Ramzi</title>
-    <style>
-        body {
+<Html lang="id">
+    <Head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <style>
+            body {
                 font-family: 'Times New Roman', Times, serif;
                 margin: 0;
                 padding: 0;
@@ -14,17 +14,15 @@
                 display: flex;
                 flex-direction: column;
                 min-height: 100vh;
-                text-align: left;
             }
             .container {
-                width: 30%;
-                margin: 10px auto;
+                width: 70%;
+                margin: 30px auto;
                 background-color: azure;
-                padding: 10px;
+                padding: 5px;
                 border-radius: 10px;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-                text-align: left;
-                flex: 1;    
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                text-align: center;
             }
             header {
                 background-color: sienna;
@@ -47,19 +45,12 @@
             nav a:hover {
                 color: lightsteelblue;
             }
-            footer {
-                background-color: sienna;
-                color: bisque;
-                margin-top: 80px;
-                padding: 20px;
-                text-align: center;
-                border-radius: 0 0 20px 20px;
-            }
-        form {
+            form {
             width: 600px;
-            padding: 20px;
+            padding: 10px;
+            margin-top: 30px;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 10px;
             background-color: #f9f9f9;
             align-self: center;
         }
@@ -87,38 +78,46 @@
         button:hover {
             background-color: #45a049;
         }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Perpustakaan Raisa Muriza Ramzi</h1>
-        <nav>
-            <a href="Index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
-        </nav> 
-    </header>
+        footer {
+                background-color: sienna;
+                color: bisque;
+                margin-top: 60px;
+                padding: 20px;
+                text-align: center;
+                border-radius: 0 0 20px 20px;
+            }
+        </style>
+    </Head>
+    <body>
+        <header>
+            <h1>Contact Us</h1>
+            <nav>
+                <a href="Index.html">Home</a>
+                <a href="about.html">About Us</a>
+            </nav>
+        </header>
 
-    <form action="submit.php" method="post">
-        <h2>Formulir Pendaftaran</h2>
-        <p>Halo! Kirim saran, kritik, dan pertanyaan melalui form ini.</p>
-        <label for="nama">Nama:</label>
-        <input type="text" id="nama" name="nama" required>
+        <form action="submit.php" method="post">
+            <h2>Hubungi Kami</h2>
+<p>Halo! Kirimkan saran, kritik, dan pertanyaan kamu melalui form ini!</p>
+<label for="Nama">Nama:</label>
+<input type="text" id="nama" name="nama" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+<label for="Email">Email:</label>
+<input type="email" id="email" name="email" required>
 
-        <label for="telepon">Telepon:</label>
-        <input type="tel" id="telepon" name="telepon" required>
+<label for="Pesan">Pesan:</label>
+<textarea id="pesan" id="pesan" row="4"></textarea>
 
+<button type="submit">Kirim</button>
+        </form>
 
-        <label for="pesan">Pesan:</label>
-        <textarea id="pesan" name="pesan" rows="4"></textarea>
-
-        <button type="submit">Kirim</button>
-    </form>
-<footer>
-    <a href="https://wa.me/6287784725140" style="color: pink;">Hubungi Whatsapp saya!</a>
-</footer>
-</body>
-</html>
+        <div class="container">
+            <section id="home">
+                <h2><a href="https://wa.me/6287784725140" style="color: tomato;">Hubungi Whatsapp saya</a> </h2>
+            </section>
+        </div>
+        <footer>
+            <p>copyright; 2025 Perpustakaan Raisa Muriza Ramzi</p>
+                    </footer>
+            </body>
