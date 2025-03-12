@@ -88,21 +88,21 @@
                 <a href="about.html">About Us</a>
             </nav>
         </header>
-
-        <form action="submit.php" method="post">
-            <h2>Hubungi Kami</h2>
-<p>Halo! Kirimkan saran, kritik, dan pertanyaan kamu melalui form ini!</p>
-<label for="Nama">Nama</label>
-<input type="text" id="nama" name="nama" required>
-
-<label for="Email">Email</label>
-<input type="email" id="email" name="email" required>
-
-<label for="Pesan">Pesan</label>
-<textarea id="pesan" id="pesan" row="4"></textarea>
-
-<button type="submit">Kirim</button>
-        </form>
+<form
+  action="https://formspree.io/f/xoveqkzz"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
 
         <div class="container">
             <section id="home">
