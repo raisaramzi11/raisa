@@ -16,6 +16,17 @@
                 min-height: 100vh;
                 text-align: justify;
             }
+            .typing {
+            font-size: 24px;
+            font-weight: bold;
+            border-right: 3px solid black; /* Efek kursor berkedip */
+            display: inline-block;
+            padding-right: 5px;
+            animation: blink 0.7s infinite;
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
             .container {
                 width: 80%;
                 margin: 50px auto;
