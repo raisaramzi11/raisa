@@ -2,17 +2,15 @@
 window.alert("Selamat Datang! Selamat menjelajah!");
 
 // Fungsi untuk menampilkan animasi mengetik
-  const text = "Halo, selamat datang di website kami!";
+  const text = "Ilmu itu dimulai dari rasa ingin tahu";
         let index = 0;
         
         function typeEffect() {
             if (index < text.length) {
                 document.getElementById("text").innerHTML += text.charAt(index);
                 index++;
-                setTimeout(typeEffect, 100); // Ubah angka untuk mengatur kecepatan ketikan
+                setTimeout(typeEffect, 150); 
             }
         }
 
         typeEffect(); // Memulai animasi
-
-
