@@ -88,6 +88,27 @@
             align-items: center;
             margin: 40px 0; /* untuk beri jarak atas bawah */
             }
+             }
+    .cookie-consent {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: brown;
+        color:bisque;
+        padding: 15px;
+  text-align: center;
+  display: none;
+  z-index: 9999;
+}
+
+.cookie-consent button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  background-color: #f4e974;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
         </style>
     </Head>
     <Body>
@@ -123,5 +144,21 @@
             </blockquote>
 <script async src="//www.instagram.com/embed.js"></script> 
         </div>
+             <div id="cookieConsent" class="cookie-consent">
+            <p>Website ini menggunakan cookies untuk meningkatkan pengalaman pengguna. <a href="/kebijakan privasi">Pelajari lebih lanjut</a></p>
+           <button onclick="acceptCookies()">Saya Mengerti</button>
+            </div>
+             <script>
+            function acceptCookies() {
+    localStorage.setItem("cookiesAccepted", "true");
+    document.getElementById("cookieConsent").style.display = "none";
+  }
+  
+  window.onload = function() {
+    if (!localStorage.getItem("cookiesAccepted")) {
+      document.getElementById("cookieConsent").style.display = "block";
+    }
+  };
+           </script>
     </Body>
 </Html>
